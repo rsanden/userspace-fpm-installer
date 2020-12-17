@@ -1,8 +1,8 @@
 #!bash
 
 STACKNAME="phpfpm"
-PREFIX="$HOME/apps/phpfpm"
-LOGDIR="$HOME/logs/apps/phpfpm"
+PREFIX="$HOME/apps/$STACKNAME"
+LOGDIR="$HOME/logs/apps/$STACKNAME"
 PORT="77777"
 
 DOMAIN1="mydomain.com"
