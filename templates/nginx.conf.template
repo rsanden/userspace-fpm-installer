@@ -13,7 +13,8 @@ http {
     scgi_temp_path        PLACEHOLDER_PREFIX/tmp/scgi_temp;
     uwsgi_temp_path       PLACEHOLDER_PREFIX/tmp/uwsgi_temp;
 
-    access_log PLACEHOLDER_PREFIX/log/nginx_PLACEHOLDER_STACKNAME_access.log;
+    log_format main '$http_x_forwarded_for - $remote_user [$time_local] "$request" $status $body_bytes_sent "$http_referer" "$http_user_agent"';
+    access_log PLACEHOLDER_PREFIX/log/nginx_PLACEHOLDER_STACKNAME_access.log main;
 
     server {
         listen PLACEHOLDER_PORT;
