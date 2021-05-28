@@ -105,7 +105,7 @@ fi
 rm -r "$PREFIX/src"
 
 #--- Create cron entry ---
-M=$((1 + RANDOM % 10))
+M=$((RANDOM % 10))
 line="\n# $STACKNAME stack\n0$M,1$M,2$M,3$M,4$M,5$M * * * * $PREFIX/bin/start &>/dev/null"
 (crontab -l 2>/dev/null || true; echo -e "$line" ) | crontab -
 
