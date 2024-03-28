@@ -24,4 +24,4 @@ After installation, the following are done for you:
   - The `start` script is run to start the instance
   - A cronjob is created to start the instance once every 10 minutes if it's not running
 
-More information is available in the Opalstack cummunity forum: [HOWTO run a private PHP-FPM stack on Nginx or Apache on Opalstack - Opalstack Community Forum](https://community.opalstack.com/d/464-howto-run-a-private-php-fpm-stack-on-nginx-or-apache-on-opalstack)
+More information is available in the Opalstack community forum: [HOWTO run a private PHP-FPM stack on Nginx or Apache on Opalstack - Opalstack Community Forum](https://community.opalstack.com/d/464-howto-run-a-private-php-fpm-stack-on-nginx-or-apache-on-opalstack)
